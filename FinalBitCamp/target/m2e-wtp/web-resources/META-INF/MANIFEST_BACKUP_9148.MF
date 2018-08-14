@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+<<<<<<< HEAD
+Built-By: sm
+Build-Jdk: 1.8.0_181
+=======
+Built-By: 1027
+Build-Jdk: 1.8.0_171
+>>>>>>> a0ab85793c09b001bbd3f4e7cdd4c50407fe57e8
+Created-By: Maven Integration for Eclipse
+
