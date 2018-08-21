@@ -3,7 +3,13 @@ package model;
 public class MyCamp {
 	int num;
 	String userId;
-	String campId;
+	int campId;
+	
+	
+	@Override
+	public String toString() {
+		return "MyCamp [num=" + num + ", userId=" + userId + ", campId=" + campId + "]";
+	}
 	public int getNum() {
 		return num;
 	}
@@ -16,16 +22,14 @@ public class MyCamp {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getCampId() {
+	public int getCampId() {
 		return campId;
 	}
-	public void setCampId(String campId) {
+	public void setCampId(int campId) {
 		this.campId = campId;
 	}
-	@Override
-	public String toString() {
-		return "MyCamp [num=" + num + ", userId=" + userId + ", campId=" + campId + "]";
-	}
+	
+	
 	
 	
 }

@@ -1,6 +1,5 @@
 package service;
 
-public class CampService {
+public interface CampService {
 
-	
 }

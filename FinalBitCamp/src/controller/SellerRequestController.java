@@ -1,10 +1,10 @@
 package controller;
 
-import service.SellerRequestService;
+import service.SellerRequestServiceImpl;
 
 public class SellerRequestController {
 	
-	SellerRequestService srService = new SellerRequestService();
+	SellerRequestServiceImpl srService = new SellerRequestServiceImpl();
 
 	public void joinSellerRequest(String userId, String businessName, String campOwner, String campAddr, String sellerId,
 			int businessNum, int campPhone, int campPost){

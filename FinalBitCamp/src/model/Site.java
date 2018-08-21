@@ -3,28 +3,37 @@ package model;
 import java.util.Date;
 
 public class Site {
-	String siteId;
-	String campId;
+	int siteId;
+	int campId;
 	String campSiteName;
 	String content;
 	int campSiteStock;
 	int campPerson;
+	Date startBusyDate;
+	Date endBusyDate;
 	int busyDayPrice;
 	int busyWkndPrice;
 	int dayPrice;
 	int wkndPrice;
-	Date startBusyDate;
-	Date endBusyDate;
-	public String getSiteId() {
+	
+	
+	@Override
+	public String toString() {
+		return "Site [siteId=" + siteId + ", campId=" + campId + ", campSiteName=" + campSiteName + ", content="
+				+ content + ", campSiteStock=" + campSiteStock + ", campPerson=" + campPerson + ", startBusyDate="
+				+ startBusyDate + ", endBusyDate=" + endBusyDate + ", busyDayPrice=" + busyDayPrice + ", busyWkndPrice="
+				+ busyWkndPrice + ", dayPrice=" + dayPrice + ", wkndPrice=" + wkndPrice + "]";
+	}
+	public int getSiteId() {
 		return siteId;
 	}
-	public void setSiteId(String siteId) {
+	public void setSiteId(int siteId) {
 		this.siteId = siteId;
 	}
-	public String getCampId() {
+	public int getCampId() {
 		return campId;
 	}
-	public void setCampId(String campId) {
+	public void setCampId(int campId) {
 		this.campId = campId;
 	}
 	public String getCampSiteName() {
@@ -51,6 +60,18 @@ public class Site {
 	public void setCampPerson(int campPerson) {
 		this.campPerson = campPerson;
 	}
+	public Date getStartBusyDate() {
+		return startBusyDate;
+	}
+	public void setStartBusyDate(Date startBusyDate) {
+		this.startBusyDate = startBusyDate;
+	}
+	public Date getEndBusyDate() {
+		return endBusyDate;
+	}
+	public void setEndBusyDate(Date endBusyDate) {
+		this.endBusyDate = endBusyDate;
+	}
 	public int getBusyDayPrice() {
 		return busyDayPrice;
 	}
@@ -75,25 +96,7 @@ public class Site {
 	public void setWkndPrice(int wkndPrice) {
 		this.wkndPrice = wkndPrice;
 	}
-	public Date getStartBusyDate() {
-		return startBusyDate;
-	}
-	public void setStartBusyDate(Date startBusyDate) {
-		this.startBusyDate = startBusyDate;
-	}
-	public Date getEndBusyDate() {
-		return endBusyDate;
-	}
-	public void setEndBusyDate(Date endBusyDate) {
-		this.endBusyDate = endBusyDate;
-	}
-	@Override
-	public String toString() {
-		return "Site [siteId=" + siteId + ", campId=" + campId + ", campSiteName=" + campSiteName + ", content="
-				+ content + ", campSiteStock=" + campSiteStock + ", campPerson=" + campPerson + ", busyDayPrice="
-				+ busyDayPrice + ", busyWkndPrice=" + busyWkndPrice + ", dayPrice=" + dayPrice + ", wkndPrice="
-				+ wkndPrice + ", startBusyDate=" + startBusyDate + ", endBusyDate=" + endBusyDate + "]";
-	}
+	
 	
 	
 }

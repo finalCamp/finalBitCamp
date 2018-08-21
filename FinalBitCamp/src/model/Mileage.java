@@ -4,10 +4,18 @@ import java.util.Date;
 
 public class Mileage {
 	int num;
-	int mileage;
 	String userId;
+	int mileage;
 	Date startDate;
 	Date endDate;
+	
+
+	
+	@Override
+	public String toString() {
+		return "Mileage [num=" + num + ", userId=" + userId + ", mileage=" + mileage + ", startDate=" + startDate
+				+ ", endDate=" + endDate + "]";
+	}
 	public int getNum() {
 		return num;
 	}
@@ -38,10 +46,6 @@ public class Mileage {
 	public void setEndDate(Date endDate) {
 		this.endDate = endDate;
 	}
-	@Override
-	public String toString() {
-		return "Mileage [num=" + num + ", mileage=" + mileage + ", userId=" + userId + ", startDate=" + startDate
-				+ ", endDate=" + endDate + "]";
-	}
+	
 	
 }

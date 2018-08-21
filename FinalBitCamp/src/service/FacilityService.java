@@ -1,6 +1,5 @@
 package service;
 
-public class FacilityService {
-	
-	
+public interface FacilityService {
+
 }

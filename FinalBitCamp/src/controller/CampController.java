@@ -2,11 +2,11 @@ package controller;
 
 import java.util.Date;
 
-import service.CampService;
+import service.CampServiceImpl;
 
 public class CampController {
 	
-	CampService cService = new CampService();
+	CampServiceImpl cService = new CampServiceImpl();
 	
 	public void addCamp(String campPolicy, String campNotice, String sellerId, String campId ) {
 		

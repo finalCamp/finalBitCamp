@@ -1,6 +1,5 @@
 package service;
 
-public class BookingService {
-	
-	
+public interface BookingService {
+
 }

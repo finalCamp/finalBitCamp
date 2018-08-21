@@ -1,10 +1,10 @@
 package controller;
 
-import service.FacilityService;
+import service.FacilityServiceImpl;
 
 public class FacilityController {
 	
-	FacilityService fService = new FacilityService();
+	FacilityServiceImpl fService = new FacilityServiceImpl();
 	
 	public void addFacility(boolean campTolilet, boolean campShower, boolean campElect, boolean campCaravan, boolean campGlamping, boolean campPlayground, boolean campFood) {
 		

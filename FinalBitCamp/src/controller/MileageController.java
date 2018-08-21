@@ -2,11 +2,11 @@ package controller;
 
 import java.util.Date;
 
-import service.MileageService;
+import service.MileageServiceImpl;
 
 public class MileageController {
 	
-	MileageService mService = new MileageService();
+	MileageServiceImpl mService = new MileageServiceImpl();
 
 	public void addMileage(String userId, int price, int mileage, Date startDate, Date endDate){
 

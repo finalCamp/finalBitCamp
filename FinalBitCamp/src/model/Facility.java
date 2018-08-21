@@ -2,7 +2,6 @@ package model;
 
 public class Facility {
 	int num;
-	String campId;
 	boolean campToilet;
 	boolean campShower;
 	boolean campElect;
@@ -10,17 +9,20 @@ public class Facility {
 	boolean campGlamping;
 	boolean campPlayground;
 	boolean campFood;
+	int campId;
+	
+	
+	@Override
+	public String toString() {
+		return "Facility [num=" + num + ", campToilet=" + campToilet + ", campShower=" + campShower + ", campElect="
+				+ campElect + ", campCaravan=" + campCaravan + ", campGlamping=" + campGlamping + ", campPlayground="
+				+ campPlayground + ", campFood=" + campFood + ", campId=" + campId + "]";
+	}
 	public int getNum() {
 		return num;
 	}
 	public void setNum(int num) {
 		this.num = num;
-	}
-	public String getCampId() {
-		return campId;
-	}
-	public void setCampId(String campId) {
-		this.campId = campId;
 	}
 	public boolean isCampToilet() {
 		return campToilet;
@@ -64,11 +66,14 @@ public class Facility {
 	public void setCampFood(boolean campFood) {
 		this.campFood = campFood;
 	}
-	@Override
-	public String toString() {
-		return "Facility [num=" + num + ", campId=" + campId + ", campToilet=" + campToilet + ", campShower="
-				+ campShower + ", campElect=" + campElect + ", campCaravan=" + campCaravan + ", campGlamping="
-				+ campGlamping + ", campPlayground=" + campPlayground + ", campFood=" + campFood + "]";
+	public int getCampId() {
+		return campId;
 	}
+	public void setCampId(int campId) {
+		this.campId = campId;
+	}
+	
+	
+	
 	
 }

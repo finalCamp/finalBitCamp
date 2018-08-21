@@ -6,12 +6,21 @@ public class Member {
 	String userId;
 	String pw;
 	String name;
+	int phone;
 	String email;
 	String addr;
-	int phone;
 	int post;
 	boolean admin;
-	Date joinDate;
+	int joinDate;
+	int type;
+	
+	
+	@Override
+	public String toString() {
+		return "Member [userId=" + userId + ", pw=" + pw + ", name=" + name + ", phone=" + phone + ", email=" + email
+				+ ", addr=" + addr + ", post=" + post + ", admin=" + admin + ", joinDate=" + joinDate + ", type=" + type
+				+ "]";
+	}
 	public String getUserId() {
 		return userId;
 	}
@@ -30,6 +39,12 @@ public class Member {
 	public void setName(String name) {
 		this.name = name;
 	}
+	public int getPhone() {
+		return phone;
+	}
+	public void setPhone(int phone) {
+		this.phone = phone;
+	}
 	public String getEmail() {
 		return email;
 	}
@@ -41,12 +56,6 @@ public class Member {
 	}
 	public void setAddr(String addr) {
 		this.addr = addr;
-	}
-	public int getPhone() {
-		return phone;
-	}
-	public void setPhone(int phone) {
-		this.phone = phone;
 	}
 	public int getPost() {
 		return post;
@@ -60,15 +69,19 @@ public class Member {
 	public void setAdmin(boolean admin) {
 		this.admin = admin;
 	}
-	public Date getJoinDate() {
+	
+	public int getJoinDate() {
 		return joinDate;
 	}
-	public void setJoinDate(Date joinDate) {
+	public void setJoinDate(int joinDate) {
 		this.joinDate = joinDate;
 	}
-	@Override
-	public String toString() {
-		return "Member [userId=" + userId + ", pw=" + pw + ", name=" + name + ", email=" + email + ", addr=" + addr
-				+ ", phone=" + phone + ", post=" + post + ", admin=" + admin + ", joinDate=" + joinDate + "]";
-	}	
+	public int getType() {
+		return type;
+	}
+	public void setType(int type) {
+		this.type = type;
+	}
+	
+	
 }

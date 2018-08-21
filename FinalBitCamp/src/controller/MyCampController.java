@@ -1,10 +1,10 @@
 package controller;
 
-import service.MyCampService;
+import service.MyCampServiceImpl;
 
 public class MyCampController {
 	
-	MyCampService mcService = new MyCampService();
+	MyCampServiceImpl mcService = new MyCampServiceImpl();
 
 	public void addMyCamp(String userId, String sellerId){
 

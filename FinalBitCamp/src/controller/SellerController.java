@@ -2,11 +2,11 @@ package controller;
 
 import java.util.Date;
 
-import service.SellerService;
+import service.SellerServiceImpl;
 
 public class SellerController {
 	
-	SellerService sService = new SellerService();
+	SellerServiceImpl sService = new SellerServiceImpl();
 
 	public void joinSeller(String userId, String businessName, String campOwner, String campAddr, String sellerId, int businessNum, int campPhone, int campPost){
 

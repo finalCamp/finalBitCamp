@@ -1,5 +1,5 @@
 package service;
 
-public class LeaveMemberService {
+public interface LeaveMemberService {
 
 }

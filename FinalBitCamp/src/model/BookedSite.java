@@ -4,45 +4,70 @@ import java.util.Date;
 
 public class BookedSite {
 	int num;
-	int bookedSiteNum;
-	String siteId;
+	int siteId;
 	String sellerId;
+	int bookedSiteNum;
 	Date stayDay;
+	
+	
+	@Override
+	public String toString() {
+		return "BookedSite [num=" + num + ", siteId=" + siteId + ", sellerId=" + sellerId + ", bookedSiteNum="
+				+ bookedSiteNum + ", stayDay=" + stayDay + "]";
+	}
+
+
 	public int getNum() {
 		return num;
 	}
+
+
 	public void setNum(int num) {
 		this.num = num;
 	}
-	public int getBookedSiteNum() {
-		return bookedSiteNum;
-	}
-	public void setBookedSiteNum(int bookedSiteNum) {
-		this.bookedSiteNum = bookedSiteNum;
-	}
-	public String getSiteId() {
+
+
+	public int getSiteId() {
 		return siteId;
 	}
-	public void setSiteId(String siteId) {
+
+
+	public void setSiteId(int siteId) {
 		this.siteId = siteId;
 	}
+
+
 	public String getSellerId() {
 		return sellerId;
 	}
+
+
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
+
+
+	public int getBookedSiteNum() {
+		return bookedSiteNum;
+	}
+
+
+	public void setBookedSiteNum(int bookedSiteNum) {
+		this.bookedSiteNum = bookedSiteNum;
+	}
+
+
 	public Date getStayDay() {
 		return stayDay;
 	}
+
+
 	public void setStayDay(Date stayDay) {
 		this.stayDay = stayDay;
 	}
-	@Override
-	public String toString() {
-		return "BookedSite [num=" + num + ", bookedSiteNum=" + bookedSiteNum + ", siteId=" + siteId + ", sellerId="
-				+ sellerId + ", stayDay=" + stayDay + "]";
-	}
+	
+	
+	
 	
 	
 }

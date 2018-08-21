@@ -1,6 +1,5 @@
 package service;
 
-public class SellerRequestService {
-	
-	
+public interface SellerRequestService {
+
 }

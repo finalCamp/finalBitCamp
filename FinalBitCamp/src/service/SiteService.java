@@ -1,7 +1,5 @@
 package service;
 
-public class SiteService {
-	
-	
+public interface SiteService {
 
 }

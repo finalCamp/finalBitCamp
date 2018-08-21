@@ -1,50 +1,61 @@
 package model;
 
+import java.util.Date;
+
 public class SellerRequest {
-	int businessNum;
-	int campPhone;
-	int campPost;
-	String campName;
-	String campOwner;
-	String campAddr;
+	long businessNum;
+	String businessName;
+	String businessPhone;
+	String businessAddr;
+	String businessEmail;
+	int businessPost;
 	String sellerId;
-	String result;
 	boolean grant;
-	public int getBusinessNum() {
+	String result;
+	
+	
+	@Override
+	public String toString() {
+		return "SellerRequest [businessNum=" + businessNum + ", businessName=" + businessName + ", businessPhone="
+				+ businessPhone + ", businessAddr=" + businessAddr + ", businessEmail=" + businessEmail
+				+ ", businessPost=" + businessPost + ", sellerId=" + sellerId + ", grant=" + grant + ", result="
+				+ result + "]";
+	}
+	public long getBusinessNum() {
 		return businessNum;
 	}
-	public void setBusinessNum(int businessNum) {
+	public void setBusinessNum(long businessNum) {
 		this.businessNum = businessNum;
 	}
-	public int getCampPhone() {
-		return campPhone;
+	public String getBusinessName() {
+		return businessName;
 	}
-	public void setCampPhone(int campPhone) {
-		this.campPhone = campPhone;
+	public void setBusinessName(String businessName) {
+		this.businessName = businessName;
 	}
-	public int getCampPost() {
-		return campPost;
+	public String getBusinessPhone() {
+		return businessPhone;
 	}
-	public void setCampPost(int campPost) {
-		this.campPost = campPost;
+	public void setBusinessPhone(String businessPhone) {
+		this.businessPhone = businessPhone;
 	}
-	public String getCampName() {
-		return campName;
+	public String getBusinessAddr() {
+		return businessAddr;
 	}
-	public void setCampName(String campName) {
-		this.campName = campName;
+	public void setBusinessAddr(String businessAddr) {
+		this.businessAddr = businessAddr;
 	}
-	public String getCampOwner() {
-		return campOwner;
+	public String getBusinessEmail() {
+		return businessEmail;
 	}
-	public void setCampOwner(String campOwner) {
-		this.campOwner = campOwner;
+	public void setBusinessEmail(String businessEmail) {
+		this.businessEmail = businessEmail;
 	}
-	public String getCampAddr() {
-		return campAddr;
+	public int getBusinessPost() {
+		return businessPost;
 	}
-	public void setCampAddr(String campAddr) {
-		this.campAddr = campAddr;
+	public void setBusinessPost(int businessPost) {
+		this.businessPost = businessPost;
 	}
 	public String getSellerId() {
 		return sellerId;
@@ -52,23 +63,19 @@ public class SellerRequest {
 	public void setSellerId(String sellerId) {
 		this.sellerId = sellerId;
 	}
-	public String getResult() {
-		return result;
-	}
-	public void setResult(String result) {
-		this.result = result;
-	}
 	public boolean isGrant() {
 		return grant;
 	}
 	public void setGrant(boolean grant) {
 		this.grant = grant;
 	}
-	@Override
-	public String toString() {
-		return "SellerRequest [businessNum=" + businessNum + ", campPhone=" + campPhone + ", campPost=" + campPost
-				+ ", campName=" + campName + ", campOwner=" + campOwner + ", campAddr=" + campAddr + ", sellerId="
-				+ sellerId + ", result=" + result + ", grant=" + grant + "]";
+	public String getResult() {
+		return result;
 	}
+	public void setResult(String result) {
+		this.result = result;
+	}
+	
+	
 		
 }

@@ -1,7 +1,5 @@
 package service;
 
-public class BookedSiteService {
-	
-	
+public interface BookedSiteService {
 
 }

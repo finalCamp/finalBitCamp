@@ -2,11 +2,11 @@ package controller;
 
 import java.util.Date;
 
-import service.SiteService;
+import service.SiteServiceImpl;
 
 public class SiteController {
 	
-	SiteService sService = new SiteService();
+	SiteServiceImpl sService = new SiteServiceImpl();
 
 	public void addSite(String campId, String campSiteName, String content, String siteId, int campSiteStock, int campPerson, int busyDayPrice, int busyWkndPrice, int dayPrice, int wkndPrice, Date startBusyDate, Date endBusyDate){
 

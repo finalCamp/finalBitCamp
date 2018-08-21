@@ -1,7 +1,5 @@
 package service;
 
-public class SellerService {
-	
-	
+public interface SellerService {
 
 }
